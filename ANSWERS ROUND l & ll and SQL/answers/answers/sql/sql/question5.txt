@@ -1,0 +1,27 @@
+Query 5.1
+
+CREATE TEMPORARY TABLE temporary_table
+
+AS
+
+SELECT Make, Model, Cost, Manufacture Date, Parts, Warranty Expiry Date
+
+FROM Table 1
+
+JOIN Table2 ON Table1.Model_id =
+
+Table2.Model_id;
+
+Fixing the error in Query 5.2
+
+To fix the error, simply change the name of the temporary table to a name that does not conflict with any existing objects in the database, for example:
+
+CREATE TEMPORARY TABLE temporary table_new
+
+AS
+
+SELECT Make, Model, Cost, Manufacture Date, Parts, Warranty Expiry Date
+
+FROM Table1
+
+JOIN Table2 ON Table1.Model_id = Table2.Model_id;

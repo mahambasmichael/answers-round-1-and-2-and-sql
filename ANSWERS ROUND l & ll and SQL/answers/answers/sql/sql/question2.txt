@@ -1,0 +1,10 @@
+
+SELECT SUM(CASE WHEN S < 0 THEN S ELSE O
+
+1 END) as NegativeSum,
+
+ SUM(CASE WHEN S >= 0 THEN S ELSE 0
+
+2 END) as PositiveSum
+
+3 FROM Numbers;

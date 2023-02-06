@@ -1,0 +1,9 @@
+1 SELECT a.employee name
+
+2 FROM company a
+
+3 JOIN company b
+
+4 ON a.client id = b.manager id;
+
+5
